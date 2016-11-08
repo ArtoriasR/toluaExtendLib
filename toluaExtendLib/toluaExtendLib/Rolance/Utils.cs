@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Rolance
@@ -8,7 +9,8 @@ namespace Rolance
     {
         public static string addArgs(int idx, string value)
         {
-            return "${" + idx + ":" + idx.ToString() + "_" + value + "}";//idx.ToString() + "_"为了避免sb自动选中了相同的类型
+            //return "${" + idx + ":" + idx.ToString() + "_" + value + "}";//idx.ToString() + "_"为了避免sb自动选中了相同的类型
+            return "${" + idx + ":" + value + "}";//不需要加上idx了，因为提示里已经加上参数名字
         }
 
         public static string cutNamespace(string str)
