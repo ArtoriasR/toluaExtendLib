@@ -96,11 +96,6 @@ namespace Rolance
         {
             File.Copy(source, target, true);
         }
-
-        public void Clear()
-        {
-            dict.Clear();
-        }
     }
 
 }
